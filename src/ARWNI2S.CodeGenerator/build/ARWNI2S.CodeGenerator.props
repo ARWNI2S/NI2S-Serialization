@@ -1,0 +1,25 @@
+<Project>
+
+  <ItemGroup>
+    <CompilerVisibleProperty Include="NI2S_DesignTimeBuild" />
+    <CompilerVisibleProperty Include="NI2S_AttachDebugger" />
+    <CompilerVisibleProperty Include="NI2S_GenerateFieldIds" />
+    <CompilerVisibleProperty Include="NI2S_ImmutableAttributes" />
+    <CompilerVisibleProperty Include="NI2S_IdAttributes" />
+    <CompilerVisibleProperty Include="NI2S_AliasAttributes" />
+    <CompilerVisibleProperty Include="NI2S_GenerateSerializerAttributes" />
+    <CompilerVisibleProperty Include="NI2S_ConstructorAttributes" />
+    <CompilerVisibleProperty Include="NI2SGenerateCompatibilityInvokers" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NI2S_DesignTimeBuild>$(DesignTimeBuild)</NI2S_DesignTimeBuild>
+    <NI2S_GenerateFieldIds>$(NI2SGenerateFieldIds)</NI2S_GenerateFieldIds>
+    <NI2S_ImmutableAttributes>$(NI2SImmutableAttributes)</NI2S_ImmutableAttributes>
+    <NI2S_IdAttributes>$(NI2SIdAttributes)</NI2S_IdAttributes>
+    <NI2S_AliasAttributes>$(NI2SAliasAttributes)</NI2S_AliasAttributes>
+    <NI2S_GenerateSerializerAttributes>$(NI2SGenerateSerializerAttributes)</NI2S_GenerateSerializerAttributes>
+    <NI2S_ConstructorAttributes>$(NI2SConstructorAttributes)</NI2S_ConstructorAttributes>
+  </PropertyGroup>
+
+</Project>

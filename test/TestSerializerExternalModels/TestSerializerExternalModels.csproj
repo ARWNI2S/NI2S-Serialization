@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>UnitTests.SerializerExternalModels</RootNamespace>
+    <AssemblyName>SerializerExternalModels</AssemblyName>
+    <TargetFrameworks>$(TestTargetFrameworks)</TargetFrameworks>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Abstractions\ARWNI2S.Serialization.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

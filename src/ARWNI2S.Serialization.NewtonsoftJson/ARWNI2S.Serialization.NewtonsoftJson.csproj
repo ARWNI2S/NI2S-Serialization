@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>ARWNI2S.Serialization.NewtonsoftJson</PackageId>
+    <TargetFrameworks>$(DefaultTargetFrameworks);netstandard2.1</TargetFrameworks>
+    <PackageDescription>Newtonsoft.Json integration for ARWNI2S.Serialization</PackageDescription>
+    <NI2SBuildTimeCodeGen>true</NI2SBuildTimeCodeGen>
+    <IsFrameworkPart>false</IsFrameworkPart>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
+  </ItemGroup>
+
+</Project>

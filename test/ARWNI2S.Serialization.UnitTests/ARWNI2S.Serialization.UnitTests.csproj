@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="JsonSerializerTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsCheck" />
+    <PackageReference Include="Grpc.Tools" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.extensibility.core" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="Google.Protobuf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.FSharp\ARWNI2S.Serialization.FSharp.csproj" />
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.MessagePack\ARWNI2S.Serialization.MessagePack.csproj" />
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.NewtonsoftJson\ARWNI2S.Serialization.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Protobuf\ARWNI2S.Serialization.Protobuf.csproj" />
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Testing\ARWNI2S.Serialization.Testing.csproj" />
+    <ProjectReference Include="..\..\src\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
+    <ProjectReference Include="..\TestSerializerExternalModels\TestSerializerExternalModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="protobuf-model.proto" GrpcServices="None" />
+  </ItemGroup>
+
+</Project>
