@@ -1,10 +1,10 @@
 using ARWNI2S.Serialization.Configuration;
-using ARWNI2S.Serialization.Hosting;
+using ARWNI2S.Serialization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.Reflection;
 
-namespace ARWNI2S.Serialization.Hosting
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Extensions for <see cref="ISerializerBuilder"/>.

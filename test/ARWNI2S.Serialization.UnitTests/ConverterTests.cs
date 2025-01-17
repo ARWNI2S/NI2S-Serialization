@@ -1,6 +1,7 @@
 using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.Codecs;
 using ARWNI2S.Serialization.Testing;
+using System;
 using Xunit.Abstractions;
 
 namespace ARWNI2S.Serialization.UnitTests

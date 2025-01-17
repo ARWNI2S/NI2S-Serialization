@@ -4,7 +4,7 @@ using ARWNI2S.Serialization.WireProtocol;
 using System.Buffers;
 using System.Security;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     internal sealed class SerializationEntryCodec : IFieldCodec<SerializationEntrySurrogate>
     {

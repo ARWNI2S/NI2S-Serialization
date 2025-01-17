@@ -1,3 +1,4 @@
+using ARWNI2S.Serialization.TypeSystem;
 using System.Text;
 
 namespace ARWNI2S.Serialization.TypeSystem

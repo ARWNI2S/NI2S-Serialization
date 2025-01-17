@@ -5,9 +5,13 @@ using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.Session;
 using ARWNI2S.Serialization.Utilities;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.IO.Pipelines;
+using System.Linq;
 using UnitTests.SerializerExternalModels;
 using Xunit;
 

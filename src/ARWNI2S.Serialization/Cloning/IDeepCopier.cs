@@ -1,4 +1,4 @@
-using ARWNI2S.Serialization.Invocation.Pools;
+using ARWNI2S.Serialization.Invocation;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.Utilities;
 using Microsoft.Extensions.ObjectPool;

@@ -5,6 +5,8 @@ using ARWNI2S.Serialization.TypeSystem;
 using ARWNI2S.Serialization.Utilities;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using System;
+using System.Collections.Generic;
 using System.IO.Pipelines;
 using System.Runtime.Serialization;
 using Xunit;

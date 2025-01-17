@@ -1,4 +1,4 @@
-﻿namespace ARWNI2S.Serialization.Properties
+﻿namespace System.Runtime.CompilerServices
 {
     internal static class IsExternalInit { }
 }

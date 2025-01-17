@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Security;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     internal class ValueTypeSerializerFactory
     {

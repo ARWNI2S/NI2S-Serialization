@@ -3,6 +3,7 @@ using ARWNI2S.Serialization.Session;
 using ARWNI2S.Serialization.Utilities;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using System;
 using System.Runtime.Serialization;
 using Xunit;
 

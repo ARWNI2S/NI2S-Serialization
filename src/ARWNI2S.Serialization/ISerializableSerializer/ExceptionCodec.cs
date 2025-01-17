@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
 using System.Runtime.Serialization;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Serializer for <see cref="Exception"/> types.

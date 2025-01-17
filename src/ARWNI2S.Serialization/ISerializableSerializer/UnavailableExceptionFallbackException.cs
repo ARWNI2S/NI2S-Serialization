@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Represents an exception which has a type which is unavailable during deserialization.

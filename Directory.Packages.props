@@ -7,13 +7,10 @@
     <MicrosoftOrleansVersion>9.0.1</MicrosoftOrleansVersion>
     <FluentMigratorVersion>6.2.0</FluentMigratorVersion>
     <!-- Shared Test Package Versions -->
-    <xUnitVersion>2.9.3</xUnitVersion>
-    <xUnitVersion Condition=" '$(TargetFramework)' == 'net8.0' ">2.5.3</xUnitVersion>
+    <xUnitVersion>2.5.3</xUnitVersion>
     <xUnitVersion Condition=" '$(TargetFramework)' == 'netstandard2.1' ">2.4.2</xUnitVersion>
-    <xUnitRunnerVersion>2.8.2</xUnitRunnerVersion>
-    <xUnitRunnerVersion Condition=" '$(TargetFramework)' == 'net8.0' ">2.5.3</xUnitRunnerVersion>
+    <xUnitRunnerVersion>2.5.3</xUnitRunnerVersion>
     <xUnitRunnerVersion Condition=" '$(TargetFramework)' == 'netstandard2.1' ">2.4.5</xUnitRunnerVersion>
-    <CsCheckVersion>4.0.0</CsCheckVersion>
   </PropertyGroup>
   <ItemGroup>
     <!-- System packages -->
@@ -42,13 +39,14 @@
     <PackageVersion Include="Google.Protobuf" Version="3.29.3" />
     <PackageVersion Include="MessagePack" Version="3.1.1" />
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageVersion Include="xunit" Version="2.9.3" />
     <!-- Test related packages -->
+    <PackageVersion Include="xunit" Version="$(xUnitVersion)" />
     <PackageVersion Include="xunit.assert" Version="$(xUnitVersion)" />
     <PackageVersion Include="xunit.extensibility.core" Version="$(xUnitVersion)" />
+    <PackageVersion Include="xunit.extensibility.execution" Version="$(xUnitVersion)" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="$(xUnitRunnerVersion)" />
     <!-- Source repo related packages -->
     <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.1" />
   </ItemGroup>
 </Project>

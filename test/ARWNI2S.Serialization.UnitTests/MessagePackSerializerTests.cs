@@ -4,6 +4,7 @@ using ARWNI2S.Serialization.Codecs;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.Testing;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using Xunit;
 using Xunit.Abstractions;
 

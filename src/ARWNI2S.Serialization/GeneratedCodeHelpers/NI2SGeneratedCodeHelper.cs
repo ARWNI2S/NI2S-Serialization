@@ -2,7 +2,7 @@ using ARWNI2S.Serialization.Activators;
 using ARWNI2S.Serialization.Buffers;
 using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.Codecs;
-using ARWNI2S.Serialization.Hosting;
+using ARWNI2S.Serialization;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.WireProtocol;
 using Microsoft.Extensions.DependencyInjection;

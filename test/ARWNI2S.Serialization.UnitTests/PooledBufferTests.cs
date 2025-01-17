@@ -1,7 +1,10 @@
 using ARWNI2S.Serialization.Buffers;
 using ARWNI2S.Serialization.Session;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Buffers;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace ARWNI2S.Serialization.UnitTests

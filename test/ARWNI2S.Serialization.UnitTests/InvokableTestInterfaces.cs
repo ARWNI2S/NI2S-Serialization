@@ -2,6 +2,10 @@ using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.Invocation;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.UnitTests;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 public interface IHasNoNamespace : IMyInvokableBaseType 
 {

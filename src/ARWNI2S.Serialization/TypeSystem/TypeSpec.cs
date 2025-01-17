@@ -1,5 +1,6 @@
 #nullable enable
 
+using ARWNI2S;
 using System.Text;
 
 namespace ARWNI2S.Serialization.TypeSystem

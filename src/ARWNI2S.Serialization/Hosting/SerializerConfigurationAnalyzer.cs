@@ -2,7 +2,7 @@ using ARWNI2S.Serialization.Configuration;
 using ARWNI2S.Serialization.Serializers;
 using System.Reflection;
 
-namespace ARWNI2S.Serialization.Hosting
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Analyzes serializer configuration to find likely configuration issues.

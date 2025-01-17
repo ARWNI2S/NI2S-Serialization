@@ -1,4 +1,4 @@
-namespace ARWNI2S.Serialization.Invocation.Pools
+namespace ARWNI2S.Serialization.Invocation
 {
     /// <summary>
     /// Object pool for <see cref="ResponseCompletionSource"/> and <see cref="ResponseCompletionSource{TResult}"/>.

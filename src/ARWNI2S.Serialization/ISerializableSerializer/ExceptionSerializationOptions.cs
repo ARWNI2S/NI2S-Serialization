@@ -1,4 +1,4 @@
-﻿namespace ARWNI2S.Serialization.ISerializableSerializer
+﻿namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Options for exception serialization.

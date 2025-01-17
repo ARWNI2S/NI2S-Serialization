@@ -48,6 +48,5 @@ namespace ARWNI2S.Serialization.Codecs
             return new TimeOnly(reader.ReadInt64());
         }
     }
-
-#endif
 }
+#endif

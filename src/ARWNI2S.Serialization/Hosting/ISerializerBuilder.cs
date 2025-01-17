@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ARWNI2S.Serialization.Hosting
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Builder interface for configuring serialization.

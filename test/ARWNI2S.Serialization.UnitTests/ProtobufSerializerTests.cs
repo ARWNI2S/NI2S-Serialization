@@ -4,9 +4,12 @@ using ARWNI2S.Serialization.Codecs;
 using ARWNI2S.Serialization.Protobuf;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.Testing;
+using CsCheck;
 using Google.Protobuf;
 using Google.Protobuf.Collections;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 

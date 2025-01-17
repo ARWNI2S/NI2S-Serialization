@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Security;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Serializer for types which implement the <see cref="ISerializable"/> pattern.

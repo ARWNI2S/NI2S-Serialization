@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <Import Condition=" '$(NI2SBuildTimeCodeGen)' == 'true' " Project="$(MSBuildThisFileDirectory)src/ARWNI2S.CodeGenerator/build/ARWNI2S.CodeGenerator.props" />
-  <Import Condition=" '$(NI2SBuildTimeCodeGen)' == 'true' " Project="$(MSBuildThisFileDirectory)src/ARWNI2S.Sdk/build/ARWNI2S.Sdk.targets" />
   <ItemGroup>
     <!-- Enable code generator -->
   <ProjectReference

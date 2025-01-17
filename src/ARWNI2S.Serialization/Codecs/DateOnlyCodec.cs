@@ -1,7 +1,6 @@
 #if NET6_0_OR_GREATER
 using ARWNI2S.Serialization.Buffers;
 using ARWNI2S.Serialization.WireProtocol;
-using System;
 using System.Buffers;
 using System.Runtime.CompilerServices;
 
@@ -48,6 +47,5 @@ namespace ARWNI2S.Serialization.Codecs
             return DateOnly.FromDayNumber(reader.ReadInt32());
         }
     }
-
-#endif
 }
+#endif

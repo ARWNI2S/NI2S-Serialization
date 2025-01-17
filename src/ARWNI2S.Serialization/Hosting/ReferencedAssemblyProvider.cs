@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Runtime.Loader;
 #endif
 
-namespace ARWNI2S.Serialization.Hosting
+namespace ARWNI2S.Serialization.Internal
 {
     public static class ReferencedAssemblyProvider
     {

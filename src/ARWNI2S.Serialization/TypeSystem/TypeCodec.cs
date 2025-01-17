@@ -1,4 +1,5 @@
 using ARWNI2S.Serialization.Buffers;
+using ARWNI2S.Serialization.TypeSystem;
 using System.Buffers;
 using System.Buffers.Binary;
 using System.Collections.Concurrent;

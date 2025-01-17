@@ -2,6 +2,7 @@ using ARWNI2S.Serialization.Buffers;
 using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.Codecs;
 using ARWNI2S.Serialization.Serializers;
+using ARWNI2S.Serialization.TypeSystem;
 using ARWNI2S.Serialization.WireProtocol;
 using Google.Protobuf;
 using System.Collections.Concurrent;

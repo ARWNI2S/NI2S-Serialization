@@ -1,6 +1,6 @@
 using Microsoft.Extensions.ObjectPool;
 
-namespace ARWNI2S.Serialization.Invocation.Pools
+namespace ARWNI2S.Serialization.Invocation
 {
     internal readonly struct DefaultConcurrentObjectPoolPolicy<T> : IPooledObjectPolicy<T> where T : class, new()
     {

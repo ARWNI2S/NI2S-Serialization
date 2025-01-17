@@ -1,5 +1,7 @@
 #nullable enable
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace ARWNI2S.Serialization.UnitTests

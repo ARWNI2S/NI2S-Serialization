@@ -1,6 +1,10 @@
 #if NET7_0_OR_GREATER
-using System.Numerics;
+using CsCheck;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
 using Xunit;
 
 namespace ARWNI2S.Serialization.UnitTests

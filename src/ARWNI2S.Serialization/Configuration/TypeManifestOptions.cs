@@ -1,4 +1,4 @@
-using ARWNI2S.Serialization.Hosting;
+using ARWNI2S.Serialization;
 using ARWNI2S.Serialization.TypeSystem;
 
 namespace ARWNI2S.Serialization.Configuration

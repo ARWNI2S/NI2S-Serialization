@@ -1,7 +1,8 @@
 using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.MessagePack;
 using ARWNI2S.Serialization.Serializers;
-using ARWNI2S.Serialization.Utilities.Internal;
+using ARWNI2S.Serialization.TypeSystem;
+using ARWNI2S.Serialization.Utilities;
 using MessagePack;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;

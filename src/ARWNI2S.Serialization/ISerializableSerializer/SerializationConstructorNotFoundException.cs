@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Security;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Thrown when a type has no serialization constructor.

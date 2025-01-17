@@ -1,5 +1,7 @@
 #nullable enable
 
+using ARWNI2S.Serialization.TypeSystem;
+
 namespace ARWNI2S.Serialization.TypeSystem
 {
     /// <summary>

@@ -3,7 +3,7 @@ using ARWNI2S.Serialization.Buffers;
 using ARWNI2S.Serialization.Cloning;
 using ARWNI2S.Serialization.Codecs;
 using ARWNI2S.Serialization.Configuration;
-using ARWNI2S.Serialization.ISerializableSerializer;
+using ARWNI2S.Serialization.Internal;
 using ARWNI2S.Serialization.Serializers;
 using ARWNI2S.Serialization.Session;
 using ARWNI2S.Serialization.TypeSystem;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using System.Buffers;
 
-namespace ARWNI2S.Serialization.Hosting
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// <see cref="IServiceCollection"/> extensions.

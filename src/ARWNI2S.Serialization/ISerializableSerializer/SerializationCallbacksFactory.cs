@@ -4,7 +4,7 @@ using System.Reflection.Emit;
 using System.Runtime.Serialization;
 using System.Security;
 
-namespace ARWNI2S.Serialization.ISerializableSerializer
+namespace ARWNI2S.Serialization
 {
     /// <summary>
     /// Creates delegates for calling methods marked with serialization attributes.
