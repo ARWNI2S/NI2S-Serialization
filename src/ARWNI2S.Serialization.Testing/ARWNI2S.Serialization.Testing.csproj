@@ -16,7 +16,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
   </ItemGroup>
 
 </Project>

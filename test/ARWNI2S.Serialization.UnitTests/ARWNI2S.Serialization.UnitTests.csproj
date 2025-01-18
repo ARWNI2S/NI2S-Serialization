@@ -26,12 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.FSharp\ARWNI2S.Serialization.FSharp.csproj" />
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.MessagePack\ARWNI2S.Serialization.MessagePack.csproj" />
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.NewtonsoftJson\ARWNI2S.Serialization.NewtonsoftJson.csproj" />
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Protobuf\ARWNI2S.Serialization.Protobuf.csproj" />
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Testing\ARWNI2S.Serialization.Testing.csproj" />
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization.FSharp\ARWNI2S.Serialization.FSharp.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization.MessagePack\ARWNI2S.Serialization.MessagePack.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization.NewtonsoftJson\ARWNI2S.Serialization.NewtonsoftJson.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization.Protobuf\ARWNI2S.Serialization.Protobuf.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization.Testing\ARWNI2S.Serialization.Testing.csproj" />
+    <ProjectReference Include="$(SourceRoot)src\ARWNI2S.Serialization\ARWNI2S.Serialization.csproj" />
     <ProjectReference Include="..\TestSerializerExternalModels\TestSerializerExternalModels.csproj" />
   </ItemGroup>
 
