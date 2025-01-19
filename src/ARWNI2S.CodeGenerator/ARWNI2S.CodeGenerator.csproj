@@ -64,6 +64,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="bin\Release\netstandard2.0\\ARWNI2S.CodeGenerator.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="all" />
   </ItemGroup>

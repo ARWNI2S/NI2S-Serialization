@@ -68,9 +68,9 @@
   </PropertyGroup>
   
   <!-- Set output folder for distributed test apps -->
-  <!-- <PropertyGroup>
-    <DistributedTestsOutputPath Condition=" '$(DistributedODistributedTestsOutputPathutputPath)'=='' ">$(SourceRoot)/Artifacts/DistributedTests</DistributedTestsOutputPath>
-  </PropertyGroup> -->
+  <PropertyGroup>
+    <DistributedTestsOutputPath Condition=" '$(DistributedODistributedTestsOutputPathutputPath)'=='' ">$(SourceRoot)../Artifacts/DistributedTests</DistributedTestsOutputPath>
+  </PropertyGroup>
 
   <Choose>
     <When Condition="'$(OfficialBuild)' != 'true'">
