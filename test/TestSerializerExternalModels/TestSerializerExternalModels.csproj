@@ -6,6 +6,6 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ARWNI2S.Serialization.Abstractions\ARWNI2S.Serialization.Abstractions.csproj" />
+    <ProjectReference Include="$(SourceRoot)\src\ARWNI2S.Serialization.Abstractions\ARWNI2S.Serialization.Abstractions.csproj" />
   </ItemGroup>
 </Project>

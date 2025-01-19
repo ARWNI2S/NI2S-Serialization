@@ -47,7 +47,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="..\ARWNI2S.Serialization.Abstractions\GenerateFieldIds.cs">
+    <Compile Include="$(SourceRoot)src\ARWNI2S.Serialization.Abstractions\GenerateFieldIds.cs">
       <Link>Model\GenerateFieldIds.cs</Link>
     </Compile>
   </ItemGroup>
