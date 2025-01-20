@@ -205,6 +205,33 @@ namespace ARWNI2S.Analyzers {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a The Name instance &apos;{0}&apos; is duplicated.
+        /// </summary>
+        internal static string DuplicateNameInstanceMessageFormat {
+            get {
+                return ResourceManager.GetString("DuplicateNameInstanceMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Duplicate Name Detected.
+        /// </summary>
+        internal static string DuplicateNameInstanceTitle {
+            get {
+                return ResourceManager.GetString("DuplicateNameInstanceTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ensure all Name instances have unique values..
+        /// </summary>
+        internal static string DuplicateNameInstanceTitleDescription {
+            get {
+                return ResourceManager.GetString("DuplicateNameInstanceTitleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a The [Id] attribute must be unique to each members of the declaring type..
         /// </summary>
         internal static string IdClashDetectedDescription {

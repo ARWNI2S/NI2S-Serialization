@@ -183,4 +183,13 @@
   <data name="IncorrectAttributeUseTitleDescription" xml:space="preserve">
     <value>This attribute should not be used on actor implementations.</value>
   </data>
+  <data name="DuplicateNameInstanceTitle" xml:space="preserve">
+    <value>Duplicate Name Detected</value>
+  </data>
+  <data name="DuplicateNameInstanceMessageFormat" xml:space="preserve">
+    <value>The Name instance '{0}' is duplicated</value>
+  </data>
+  <data name="DuplicateNameInstanceTitleDescription" xml:space="preserve">
+    <value>Ensure all Name instances have unique values.</value>
+  </data>
 </root>

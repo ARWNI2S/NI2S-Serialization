@@ -24,6 +24,7 @@ ARWNI2S0010  | Usage   | Info   | Add missing [Alias] attribute
 ARWNI2S0011  | Usage   | Error  | The [Alias] attribute must be unique to the declaring type
 ARWNI2S0012  | Usage   | Error  | The [Id] attribute must be unique to each members of the declaring type
 ARWNI2S0013  | Usage   | Error  | This attribute should not be used on actor implementations
+ARWNI2S0014  | Usage   | Error  | Names must be globally unique in source code
 
 ### Removed Rules
 
