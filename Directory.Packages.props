@@ -14,24 +14,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- System packages -->
-    <PackageVersion Include="coverlet.collector" Version="6.0.3" />
-    <PackageVersion Include="CsCheck" Version="4.2.0" />
-    <PackageVersion Include="Grpc.Tools" Version="2.69.0" />
-    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
-    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftPackageLatestVersion)" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageVersion Include="System.Collections.Immutable" Version="8.0.0" />
     <PackageVersion Include="System.IO.Hashing" Version="$(MicrosoftPackageLatestVersion)" />
     <PackageVersion Include="System.IO.Pipelines" Version="$(MicrosoftPackageLatestVersion)" />
     <!-- Microsoft packages -->
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.12.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.12.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.12.0" />
     <PackageVersion Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftPackageLatestVersion)" />
     <PackageVersion Include="Microsoft.Extensions.DependencyModel" Version="$(MicrosoftPackageLatestVersion)" />
     <PackageVersion Include="Microsoft.Extensions.ObjectPool" Version="$(MicrosoftPackageLatestVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Options" Version="$(MicrosoftPackageLatestVersion)" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <!-- Abstractions packages -->
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MicrosoftPackageLatestVersion)" />
     <!-- 3rd party packages -->
@@ -40,6 +37,9 @@
     <PackageVersion Include="MessagePack" Version="3.1.1" />
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
     <!-- Test related packages -->
+    <PackageVersion Include="coverlet.collector" Version="6.0.3" />
+    <PackageVersion Include="CsCheck" Version="4.2.0" />
+    <PackageVersion Include="Grpc.Tools" Version="2.69.0" />
     <PackageVersion Include="xunit" Version="$(xUnitVersion)" />
     <PackageVersion Include="xunit.assert" Version="$(xUnitVersion)" />
     <PackageVersion Include="xunit.extensibility.core" Version="$(xUnitVersion)" />
