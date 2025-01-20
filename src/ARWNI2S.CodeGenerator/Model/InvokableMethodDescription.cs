@@ -156,7 +156,7 @@ namespace ARWNI2S.CodeGenerator
         public InvokableMethodId Key { get; }
 
         /// <summary>
-        /// Gets the proxy base information for the method (eg, GrainReference, whether it is an extension).
+        /// Gets the proxy base information for the method (eg, ActorReference, whether it is an extension).
         /// </summary>
         public InvokableMethodProxyBase ProxyBase => Key.ProxyBase;
 

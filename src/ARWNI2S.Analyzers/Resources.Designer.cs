@@ -250,7 +250,7 @@ namespace ARWNI2S.Analyzers {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a This attribute should not be used on grain implementations..
+        ///   Busca una cadena traducida similar a This attribute should not be used on actor implementations..
         /// </summary>
         internal static string IncorrectAttributeUseTitleDescription {
             get {

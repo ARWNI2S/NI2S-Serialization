@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace ARWNI2S.Analyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class GrainInterfaceMethodReturnTypeDiagnosticAnalyzer : DiagnosticAnalyzer
+    public class ActorInterfaceMethodReturnTypeDiagnosticAnalyzer : DiagnosticAnalyzer
     {
         private const string BaseInterfaceName = "ARWNI2S.Runtime.IAddressable";
         private static readonly (string[] Namespace, string MetadataName)[] SupportedReturnTypes = new[]
@@ -20,8 +20,8 @@ namespace ARWNI2S.Analyzers
             (new [] { "System" }, "Void")
         };
         public const string DiagnosticId = "ARWNI2S0009";
-        public const string Title = "Grain interfaces methods must return a compatible type";
-        public const string MessageFormat = $"Grain interfaces methods must return a compatible type, such as Task, Task<T>, ValueTask, ValueTask<T>, or void";
+        public const string Title = "Actor interfaces methods must return a compatible type";
+        public const string MessageFormat = $"Actor interfaces methods must return a compatible type, such as Task, Task<T>, ValueTask, ValueTask<T>, or void";
         public const string Category = "Usage";
 
         private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Error, isEnabledByDefault: true);

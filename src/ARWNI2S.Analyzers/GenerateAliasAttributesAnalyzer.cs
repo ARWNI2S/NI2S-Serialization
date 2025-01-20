@@ -37,7 +37,7 @@ namespace ARWNI2S.Analyzers
             // Interface types and their methods
             if (context.Node is InterfaceDeclarationSyntax { } interfaceDeclaration)
             {
-                if (!interfaceDeclaration.ExtendsGrainInterface(context.SemanticModel))
+                if (!interfaceDeclaration.ExtendsActorInterface(context.SemanticModel))
                 {
                     return;
                 }
@@ -72,7 +72,7 @@ namespace ARWNI2S.Analyzers
             if (context.Node is TypeDeclarationSyntax { } typeDeclaration)
             {
                 if (typeDeclaration is ClassDeclarationSyntax classDeclaration &&
-                    classDeclaration.InheritsGrainClass(context.SemanticModel))
+                    classDeclaration.InheritsActorClass(context.SemanticModel))
                 {
                     return;
                 }

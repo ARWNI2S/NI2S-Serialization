@@ -21,40 +21,40 @@ namespace ARWNI2S.CodeGenerator
                 }
 
                 if (!Debugger.IsAttached &&
-                    context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_designtimebuild", out var isDesignTimeBuild)
+                    context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_designtimebuild", out var isDesignTimeBuild)
                     && string.Equals("true", isDesignTimeBuild, StringComparison.OrdinalIgnoreCase))
                 {
                     return;
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_attachdebugger", out var attachDebuggerOption)
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_attachdebugger", out var attachDebuggerOption)
                     && string.Equals("true", attachDebuggerOption, StringComparison.OrdinalIgnoreCase))
                 {
                     Debugger.Launch();
                 }
 
                 var options = new CodeGeneratorOptions();
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_immutableattributes", out var immutableAttributes) && immutableAttributes is { Length: > 0 })
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_immutableattributes", out var immutableAttributes) && immutableAttributes is { Length: > 0 })
                 {
                     options.ImmutableAttributes.AddRange(immutableAttributes.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList());
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_aliasattributes", out var aliasAttributes) && aliasAttributes is { Length: > 0 })
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_aliasattributes", out var aliasAttributes) && aliasAttributes is { Length: > 0 })
                 {
                     options.AliasAttributes.AddRange(aliasAttributes.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList());
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_idattributes", out var idAttributes) && idAttributes is { Length: > 0 })
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_idattributes", out var idAttributes) && idAttributes is { Length: > 0 })
                 {
                     options.IdAttributes.AddRange(idAttributes.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList());
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_generateserializerattributes", out var generateSerializerAttributes) && generateSerializerAttributes is { Length: > 0 })
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_generateserializerattributes", out var generateSerializerAttributes) && generateSerializerAttributes is { Length: > 0 })
                 {
                     options.GenerateSerializerAttributes.AddRange(generateSerializerAttributes.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList());
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleans_generatefieldids", out var generateFieldIds) && generateFieldIds is { Length: > 0 })
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2s_generatefieldids", out var generateFieldIds) && generateFieldIds is { Length: > 0 })
                 {
                     if (Enum.TryParse(generateFieldIds, out GenerateFieldIds fieldIdOption))
                     {
@@ -62,7 +62,7 @@ namespace ARWNI2S.CodeGenerator
                     }
                 }
 
-                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.orleansgeneratecompatibilityinvokers", out var generateCompatInvokersValue)
+                if (context.AnalyzerConfigOptions.GlobalOptions.TryGetValue("build_property.ni2sgeneratecompatibilityinvokers", out var generateCompatInvokersValue)
                     && bool.TryParse(generateCompatInvokersValue, out var genCompatInvokers))
                 {
                     options.GenerateCompatibilityInvokers = genCompatInvokers;
@@ -72,7 +72,7 @@ namespace ARWNI2S.CodeGenerator
                 var syntax = codeGenerator.GenerateCode(context.CancellationToken);
                 var sourceString = syntax.NormalizeWhitespace().ToFullString();
                 var sourceText = SourceText.From(sourceString, Encoding.UTF8);
-                context.AddSource($"{context.Compilation.AssemblyName ?? "assembly"}.orleans.g.cs", sourceText);
+                context.AddSource($"{context.Compilation.AssemblyName ?? "assembly"}.niis.g.cs", sourceText);
             }
             catch (Exception exception)
             {

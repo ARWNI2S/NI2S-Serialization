@@ -7,11 +7,11 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace ARWNI2S.Analyzers
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
-    public class GrainInterfacePropertyDiagnosticAnalyzer : DiagnosticAnalyzer
+    public class ActorInterfacePropertyDiagnosticAnalyzer : DiagnosticAnalyzer
     {
         private const string BaseInterfaceName = "ARWNI2S.Runtime.IAddressable";
         public const string DiagnosticId = "ARWNI2S0008";
-        public const string Title = "Grain interfaces must not contain properties";
+        public const string Title = "Actor interfaces must not contain properties";
         public const string MessageFormat = Title;
         public const string Category = "Usage";
 

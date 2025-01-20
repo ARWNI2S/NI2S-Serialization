@@ -34,7 +34,7 @@ namespace ARWNI2S.Analyzers
         private void CheckSyntaxNode(SyntaxNodeAnalysisContext context)
         {
             var interfaceDeclaration = (InterfaceDeclarationSyntax)context.Node;
-            if (!interfaceDeclaration.ExtendsGrainInterface(context.SemanticModel))
+            if (!interfaceDeclaration.ExtendsActorInterface(context.SemanticModel))
             {
                 return;
             }

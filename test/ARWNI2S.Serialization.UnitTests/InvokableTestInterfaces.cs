@@ -75,7 +75,7 @@ namespace ARWNI2S.Serialization.UnitTests
 
     [Alias("_proxy_alias_test_")]
     [GenerateMethodSerializers(typeof(MyInvokableProxyBase))]
-    public interface IProxyAliasTestGrain
+    public interface IProxyAliasTestActor
     {
         [Id(125)]
         ValueTask Method();
@@ -90,8 +90,8 @@ namespace ARWNI2S.Serialization.UnitTests
         ValueTask OtherMethod();
     }
 
-    [Alias("test.IGenericProxyAliasTestGrain`3"), GenerateMethodSerializers(typeof(MyInvokableProxyBase))]
-    public interface IGenericProxyAliasTestGrain<T, U, V>
+    [Alias("test.IGenericProxyAliasTestActor`3"), GenerateMethodSerializers(typeof(MyInvokableProxyBase))]
+    public interface IGenericProxyAliasTestActor<T, U, V>
     {
         [Id(777)]
         ValueTask Method<W, X, Y>();
@@ -100,9 +100,9 @@ namespace ARWNI2S.Serialization.UnitTests
     public interface IG2<T1, T2> : IMyInvokableBaseType 
     { }
 
-    public class HalfOpenGrain1<T> : IG2<T, int>
+    public class HalfOpenActor1<T> : IG2<T, int>
     { }
-    public class HalfOpenGrain2<T> : IG2<int, T>
+    public class HalfOpenActor2<T> : IG2<int, T>
     { }
 
     public class OpenGeneric<T2, T1> : IG2<T2, T1>
@@ -138,7 +138,7 @@ namespace ARWNI2S.Serialization.UnitTests
         }
     }
 
-    public interface IGrainWithGenericMethods : IMyInvokableBaseType 
+    public interface IActorWithGenericMethods : IMyInvokableBaseType 
     {
         Task<Type[]> GetTypesExplicit<T, U, V>();
         Task<Type[]> GetTypesInferred<T, U, V>(T t, U u, V v);
@@ -147,11 +147,11 @@ namespace ARWNI2S.Serialization.UnitTests
         Task<int> RoundTrip(int val);
         Task<T> Default<T>();
         Task<string> Default();
-        Task<TGrain> Constraints<TGrain>(TGrain grain) where TGrain : IMyInvokableBaseType;
+        Task<TActor> Constraints<TActor>(TActor actor) where TActor : IMyInvokableBaseType;
         ValueTask<int> ValueTaskMethod(bool useCache);
     }
 
-    public class GrainWithGenericMethods : IGrainWithGenericMethods
+    public class ActorWithGenericMethods : IActorWithGenericMethods
     {
         private object state;
 
@@ -190,9 +190,9 @@ namespace ARWNI2S.Serialization.UnitTests
             return Task.FromResult("default string");
         }
 
-        public Task<TGrain> Constraints<TGrain>(TGrain grain) where TGrain : IMyInvokableBaseType 
+        public Task<TActor> Constraints<TActor>(TActor actor) where TActor : IMyInvokableBaseType 
         {
-            return Task.FromResult(grain);
+            return Task.FromResult(actor);
         }
 
         public void SetValue<T>(T value)
@@ -213,7 +213,7 @@ namespace ARWNI2S.Serialization.UnitTests
         }
     }
 
-    public interface IGenericGrainWithGenericMethods<T> : IMyInvokableBaseType 
+    public interface IGenericActorWithGenericMethods<T> : IMyInvokableBaseType 
     {
         Task<T> Method(T value);
 #pragma warning disable 693
@@ -221,10 +221,10 @@ namespace ARWNI2S.Serialization.UnitTests
 #pragma warning restore 693
     }
 
-    public interface IRuntimeCodeGenGrain<T> : IMyInvokableBaseType
+    public interface IRuntimeCodeGenActor<T> : IMyInvokableBaseType
     {
         /// <summary>
-        /// Sets and returns the grain's state.
+        /// Sets and returns the actor's state.
         /// </summary>
         /// <param name="value">The new state.</param>
         /// <returns>The current state.</returns>
@@ -239,7 +239,7 @@ namespace ARWNI2S.Serialization.UnitTests
 
     [Serializable]
     [GenerateSerializer]
-    public class GenericGrainState<T>
+    public class GenericActorState<T>
     {
         [Id(1)]
         public T @event { get; set; }
@@ -415,7 +415,7 @@ namespace ARWNI2S.Serialization.UnitTests
         }
     }
 
-    public interface INestedGenericGrain : IMyInvokableBaseType 
+    public interface INestedGenericActor : IMyInvokableBaseType 
     {
         Task<int> Do(NestedGeneric<int> value);
         Task<int> Do(NestedConstructedGeneric value);
@@ -424,7 +424,7 @@ namespace ARWNI2S.Serialization.UnitTests
     /// <summary>
     /// Tests that nested classes do not fail code generation.
     /// </summary>
-    public class NestedGenericGrain : INestedGenericGrain
+    public class NestedGenericActor : INestedGenericActor
     {
         public Task<int> Do(NestedGeneric<int> value)
         {

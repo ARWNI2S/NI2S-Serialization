@@ -181,6 +181,6 @@
     <value>Remove attribute</value>
   </data>
   <data name="IncorrectAttributeUseTitleDescription" xml:space="preserve">
-    <value>This attribute should not be used on grain implementations.</value>
+    <value>This attribute should not be used on actor implementations.</value>
   </data>
 </root>

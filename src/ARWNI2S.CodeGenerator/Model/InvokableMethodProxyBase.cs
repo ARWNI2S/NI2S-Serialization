@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 namespace ARWNI2S.CodeGenerator
 {
     /// <summary>
-    /// Describes the proxy base for an invokable method, including whether the proxy is a grain reference or extension, and what invokable base types should be used for a given return type.
+    /// Describes the proxy base for an invokable method, including whether the proxy is a actor reference or extension, and what invokable base types should be used for a given return type.
     /// </summary>
     internal sealed class InvokableMethodProxyBase : IEquatable<InvokableMethodProxyBase>
     {
@@ -26,7 +26,7 @@ namespace ARWNI2S.CodeGenerator
         public InvokableMethodProxyBaseId Key { get; }
 
         /// <summary>
-        /// Gets the proxy base type, eg <c>GrainReference</c>.
+        /// Gets the proxy base type, eg <c>ActorReference</c>.
         /// </summary>
         public INamedTypeSymbol ProxyBaseType => Key.ProxyBaseType;
 

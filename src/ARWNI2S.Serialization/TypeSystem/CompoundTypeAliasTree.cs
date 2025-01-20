@@ -90,7 +90,7 @@ namespace ARWNI2S.Serialization.TypeSystem
             {
                 if (value is not null && existing.Value is { } type && type != value)
                 {
-                    // When the same grain interface is used across multiple assemblies which don't have cross references,
+                    // When the same actor interface is used across multiple assemblies which don't have cross references,
                     // code-gen will generate code for both because it works in isolation, yet at startup they are combined.
 
                     // In this case, if the key is present, and the value is the same as the one being added,

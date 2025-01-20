@@ -48,10 +48,10 @@ namespace ARWNI2S.Serialization.UnitTests
         public void GeneratedProxyClassesHaveExpectedCompoundTypeNames()
         {
             var configuration = _serviceProvider.GetRequiredService<IOptions<TypeManifestOptions>>().Value;
-            var generatedProxy = configuration.InterfaceProxies.Single(proxy => typeof(IProxyAliasTestGrain).IsAssignableFrom(proxy));
+            var generatedProxy = configuration.InterfaceProxies.Single(proxy => typeof(IProxyAliasTestActor).IsAssignableFrom(proxy));
             var instance = ActivatorUtilities.CreateInstance(_serviceProvider, generatedProxy);
             var instanceAsBase = Assert.IsAssignableFrom<MyInvokableProxyBase>(instance);
-            var instanceAsInterface = Assert.IsAssignableFrom<IProxyAliasTestGrain>(instance);
+            var instanceAsInterface = Assert.IsAssignableFrom<IProxyAliasTestActor>(instance);
 
             var calls = new Queue<IInvokable>();
             instanceAsBase.OnInvoke = body => calls.Enqueue(body);
@@ -81,10 +81,10 @@ namespace ARWNI2S.Serialization.UnitTests
         public void GeneratedProxyClassesHaveExpectedCompoundTypeNames_Generic()
         {
             var configuration = _serviceProvider.GetRequiredService<IOptions<TypeManifestOptions>>().Value;
-            var generatedProxy = configuration.InterfaceProxies.Single(proxy => proxy.GetInterfaces().Any(iface => iface.IsGenericType && typeof(IGenericProxyAliasTestGrain<,,>).IsAssignableFrom(iface.GetGenericTypeDefinition())));
+            var generatedProxy = configuration.InterfaceProxies.Single(proxy => proxy.GetInterfaces().Any(iface => iface.IsGenericType && typeof(IGenericProxyAliasTestActor<,,>).IsAssignableFrom(iface.GetGenericTypeDefinition())));
             var instance = ActivatorUtilities.CreateInstance(_serviceProvider, generatedProxy.MakeGenericType(typeof(int), typeof(string), typeof(double)));
             var instanceAsBase = Assert.IsAssignableFrom<MyInvokableProxyBase>(instance);
-            var instanceAsInterface = Assert.IsAssignableFrom<IGenericProxyAliasTestGrain<int, string, double>>(instance);
+            var instanceAsInterface = Assert.IsAssignableFrom<IGenericProxyAliasTestActor<int, string, double>>(instance);
 
             var calls = new Queue<IInvokable>();
             instanceAsBase.OnInvoke = body => calls.Enqueue(body);
@@ -93,7 +93,7 @@ namespace ARWNI2S.Serialization.UnitTests
             Assert.True(res.IsCompletedSuccessfully);
             var method = calls.Dequeue();
             var (payload, bitStream) = SerializePayload(method);
-            var expectedString = "(\"inv\",[_my_proxy_base_],[test.IGenericProxyAliasTestGrain`3],\"777\")`6[[int],[string],[double],[int],[_custom_type_alias_],[int]]";
+            var expectedString = "(\"inv\",[_my_proxy_base_],[test.IGenericProxyAliasTestActor`3],\"777\")`6[[int],[string],[double],[int],[_custom_type_alias_],[int]]";
             var expectedEncoding = Encoding.UTF8.GetBytes(expectedString).AsSpan();
             Assert.True(payload.AsSpan().IndexOf(expectedEncoding) >= 0, $"Expected to find string \"{expectedString}\" in bitstream (formatted: {bitStream})");
         }

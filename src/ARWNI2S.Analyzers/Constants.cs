@@ -5,7 +5,7 @@ namespace ARWNI2S.Analyzers
         public const string SystemNamespace = "System";
 
         public const string IAddressibleFullyQualifiedName = "ARWNI2S.Runtime.IAddressable";
-        public const string GrainBaseFullyQualifiedName = "ARWNI2S.Grain";
+        public const string ActorBaseFullyQualifiedName = "ARWNI2S.Actor";
 
         public const string IdAttributeName = "Id";
         public const string IdAttributeFullyQualifiedName = "global::ARWNI2S.IdAttribute";

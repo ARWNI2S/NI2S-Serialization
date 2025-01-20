@@ -8,7 +8,7 @@ namespace ARWNI2S.CodeGenerator
     internal readonly struct InvokableMethodId(InvokableMethodProxyBase proxyBaseInfo, INamedTypeSymbol interfaceType, IMethodSymbol method) : IEquatable<InvokableMethodId>
     {
         /// <summary>
-        /// Gets the proxy base information for the method (eg, GrainReference, whether it is an extension).
+        /// Gets the proxy base information for the method (eg, ActorReference, whether it is an extension).
         /// </summary>
         public InvokableMethodProxyBase ProxyBase { get; } = proxyBaseInfo;
 

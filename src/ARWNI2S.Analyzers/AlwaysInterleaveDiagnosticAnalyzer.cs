@@ -12,7 +12,7 @@ namespace ARWNI2S.Analyzers
         private const string AlwaysInterleaveAttributeName = "ARWNI2S.Concurrency.AlwaysInterleaveAttribute";
 
         public const string DiagnosticId = "ARWNI2S0001";
-        public const string Title = "[AlwaysInterleave] must only be used on the grain interface method and not the grain class method";
+        public const string Title = "[AlwaysInterleave] must only be used on the actor interface method and not the actor class method";
         public const string MessageFormat = Title;
         public const string Category = "Usage";
 
@@ -38,7 +38,7 @@ namespace ARWNI2S.Analyzers
 
             if (symbol.ContainingType.TypeKind == TypeKind.Interface)
             {
-                // TODO: Check that interface inherits from IGrain
+                // TODO: Check that interface inherits from IActor
                 return;
             }
 

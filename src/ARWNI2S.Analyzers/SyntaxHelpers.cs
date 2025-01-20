@@ -144,7 +144,7 @@ namespace ARWNI2S.Analyzers
             return isFieldOrAutoProperty;
         }
 
-        public static bool ExtendsGrainInterface(this InterfaceDeclarationSyntax interfaceDeclaration, SemanticModel semanticModel)
+        public static bool ExtendsActorInterface(this InterfaceDeclarationSyntax interfaceDeclaration, SemanticModel semanticModel)
         {
             if (interfaceDeclaration is null)
             {
@@ -168,7 +168,7 @@ namespace ARWNI2S.Analyzers
             return false;
         }
 
-        public static bool InheritsGrainClass(this ClassDeclarationSyntax declaration, SemanticModel semanticModel)
+        public static bool InheritsActorClass(this ClassDeclarationSyntax declaration, SemanticModel semanticModel)
         {
             var baseTypes = declaration.BaseList?.Types;
             if (baseTypes is null)
@@ -188,7 +188,7 @@ namespace ARWNI2S.Analyzers
                         currentTypeSymbol = baseBaseTypeSymbol;
                     }
 
-                    if (Constants.GrainBaseFullyQualifiedName.Equals(currentTypeSymbol.ToDisplayString(NullableFlowState.None), StringComparison.Ordinal))
+                    if (Constants.ActorBaseFullyQualifiedName.Equals(currentTypeSymbol.ToDisplayString(NullableFlowState.None), StringComparison.Ordinal))
                     {
                         return true;
                     }

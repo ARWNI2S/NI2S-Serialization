@@ -10,7 +10,7 @@ namespace ARWNI2S.Serialization
     public static class SerializerConfigurationAnalyzer
     {
         /// <summary>
-        /// Analyzes grain interface methods to find parameter types and return types which are not serializable.
+        /// Analyzes actor interface methods to find parameter types and return types which are not serializable.
         /// </summary>
         /// <param name="codecProvider">
         /// The codec provider.

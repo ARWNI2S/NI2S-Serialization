@@ -235,7 +235,7 @@ namespace ARWNI2S.CodeGenerator
 
             alias[1 + proxyBaseComponents.Length] = new(containingInterface);
 
-            // For grain extensions, also explicitly include the method's containing type.
+            // For actor extensions, also explicitly include the method's containing type.
             // This is to distinguish between different extension methods with the same id (eg, alias) but different containing types.
             if (proxyBase.IsExtension)
             {

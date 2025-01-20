@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 namespace ARWNI2S.CodeGenerator
 {
     /// <summary>
-    /// Identifies a proxy base, including whether the proxy is a grain reference or extension.
+    /// Identifies a proxy base, including whether the proxy is a actor reference or extension.
     /// </summary>
     internal readonly struct InvokableMethodProxyBaseId : IEquatable<InvokableMethodProxyBaseId>
     {
@@ -31,7 +31,7 @@ namespace ARWNI2S.CodeGenerator
         }
 
         /// <summary>
-        /// Gets the proxy base type, eg <c>GrainReference</c>.
+        /// Gets the proxy base type, eg <c>ActorReference</c>.
         /// </summary>
         public INamedTypeSymbol ProxyBaseType { get; }
 

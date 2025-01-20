@@ -64,7 +64,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="bin\Release\netstandard2.0\\ARWNI2S.CodeGenerator.dll" />
+    <None Remove="bin\Debug\netstandard2.0\\ARWNI2S.CodeGenerator.dll" />
   </ItemGroup>
 
   <ItemGroup>

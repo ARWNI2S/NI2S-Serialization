@@ -44,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="bin\Release\netstandard2.0\\ARWNI2S.Analyzers.dll" />
+    <None Remove="bin\Debug\netstandard2.0\\ARWNI2S.Analyzers.dll" />
   </ItemGroup>
 
 

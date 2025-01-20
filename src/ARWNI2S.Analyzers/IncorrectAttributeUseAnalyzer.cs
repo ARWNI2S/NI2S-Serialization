@@ -35,7 +35,7 @@ namespace ARWNI2S.Analyzers
 
             var classDeclaration = (ClassDeclarationSyntax)context.Node;
 
-            if (!classDeclaration.InheritsGrainClass(context.SemanticModel))
+            if (!classDeclaration.InheritsActorClass(context.SemanticModel))
             {
                 return;
             }
