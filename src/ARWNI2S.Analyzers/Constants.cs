@@ -3,6 +3,8 @@ namespace ARWNI2S.Analyzers
     internal static class Constants
     {
         public const string SystemNamespace = "System";
+        public const string GlobalNamespace = "global::ARWNI2S";
+        public const string AbstractionsAssemblyName = "ARWNI2S.Abstractions";
 
         public const string ActorBaseFullyQualifiedName = "global::ARWNI2S.Engine.Actor.NI2SActor";
         public const string IAddressibleFullyQualifiedName = "ARWNI2S.Runtime.IAddressable";
@@ -21,6 +23,6 @@ namespace ARWNI2S.Analyzers
         public const string NonSerializedAttributeFullyQualifiedName = "global::System.NonSerializedAttribute";
       
         public const string AliasAttributeName = "Alias";
-        public const string AliasAttributeFullyQualifiedName = "global::ARWNI2S.AliasAttribute"; 
+        public const string AliasAttributeFullyQualifiedName = "global::ARWNI2S.AliasAttribute";
     }
 }

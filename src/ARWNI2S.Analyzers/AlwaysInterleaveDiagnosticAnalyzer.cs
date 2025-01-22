@@ -38,7 +38,7 @@ namespace ARWNI2S.Analyzers
 
             if (symbol.ContainingType.TypeKind == TypeKind.Interface)
             {
-                // TODO: Check that interface inherits from IActor
+                // TODO: Check that interface inherits from INiisActor
                 return;
             }
 

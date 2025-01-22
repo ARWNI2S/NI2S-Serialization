@@ -207,27 +207,27 @@ namespace ARWNI2S.Analyzers {
         /// <summary>
         ///   Busca una cadena traducida similar a The Name instance &apos;{0}&apos; is duplicated.
         /// </summary>
-        internal static string DuplicateNameInstanceMessageFormat {
+        internal static string DuplicateNameInstancesMessageFormat {
             get {
-                return ResourceManager.GetString("DuplicateNameInstanceMessageFormat", resourceCulture);
+                return ResourceManager.GetString("DuplicateNameInstancesMessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Busca una cadena traducida similar a Duplicate Name Detected.
         /// </summary>
-        internal static string DuplicateNameInstanceTitle {
+        internal static string DuplicateNameInstancesTitle {
             get {
-                return ResourceManager.GetString("DuplicateNameInstanceTitle", resourceCulture);
+                return ResourceManager.GetString("DuplicateNameInstancesTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Busca una cadena traducida similar a Ensure all Name instances have unique values..
         /// </summary>
-        internal static string DuplicateNameInstanceTitleDescription {
+        internal static string DuplicateNameInstancesTitleDescription {
             get {
-                return ResourceManager.GetString("DuplicateNameInstanceTitleDescription", resourceCulture);
+                return ResourceManager.GetString("DuplicateNameInstancesTitleDescription", resourceCulture);
             }
         }
         
