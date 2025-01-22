@@ -5,14 +5,6 @@ using System.Diagnostics.CodeAnalysis;
 using Xunit;
 using Xunit.Abstractions;
 
-/* Cambio no fusionado mediante combinación del proyecto 'ARWNI2S.Serialization.Testing (netstandard2.1)'
-Agregado:
-using NI2S;
-using ARWNI2S.Serialization;
-using ARWNI2S.Serialization.TestKit;
-using ARWNI2S.Serialization.Testing;
-*/
-
 namespace ARWNI2S.Serialization.Testing
 {
     /// <summary>
